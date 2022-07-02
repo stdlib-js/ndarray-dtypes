@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.dtypes;
+})();
 })();
 </script>
 ```
@@ -121,6 +123,7 @@ The output `array` contains the following data types:
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var DTYPES = dtypes();
 var bool;
@@ -144,6 +147,7 @@ bool = isdtype( 'uint8' );
 bool = isdtype( 'beep' );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -250,13 +254,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd/tree/umd
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/umd
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/umd/tree/umd
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd/tree/umd
 
-[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes/tree/umd
+[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
