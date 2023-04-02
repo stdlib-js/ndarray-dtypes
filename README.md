@@ -34,32 +34,42 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-dtypes
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
 ```
 
-You can also import the following named exports from the package:
-
-```javascript
-import { enum } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-```
-
-#### dtypes()
+#### dtypes( \[kind] )
 
 Returns a list of ndarray data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'binary', 'complex64', 'complex128', 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// e.g., returns [ 'binary', 'complex64', 'complex128', ... ]
 ```
 
-The output `array` contains the following data types:
+When not provided a data type "kind", the function returns an array containing the following data types:
 
 -   `binary`: binary.
 -   `complex64`: single-precision complex floating-point numbers.
@@ -74,6 +84,24 @@ The output `array` contains the following data types:
 -   `uint32`: unsigned 32-bit integers.
 -   `uint8`: unsigned 8-bit integers.
 -   `uint8c`: unsigned clamped 8-bit integers.
+
+To return the subset of data types belonging to a specified data type kind, provide a `kind` argument.
+
+```javascript
+var out = dtypes( 'floating_point' );
+// returns [...]
+```
+
+The function supports the following data type kinds:
+
+-   `floating_point`: floating-point data types.
+-   `real_floating_point`: real-valued floating-point data types.
+-   `complex_floating_point`: complex-valued floating-point data types.
+-   `integral`: integer data types.
+-   `signed_integer`: signed integer data types.
+-   `unsigned_integer`: unsigned integer data types.
+-   `numeric`: numeric data types.
+-   `all`: all data types.
 
 </section>
 
@@ -95,14 +123,9 @@ The output `array` contains the following data types:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-index-of@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
+```javascript
+var indexOf = require( '@stdlib/utils-index-of' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
 
 var DTYPES = dtypes();
 var bool;
@@ -125,10 +148,6 @@ bool = isdtype( 'uint8' );
 
 bool = isdtype( 'beep' );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -169,7 +188,7 @@ bool = isdtype( 'beep' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -231,13 +250,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/esm
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/esm
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes/tree/esm
+[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes
 
 <!-- </related-links> -->
 
