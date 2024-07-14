@@ -38,6 +38,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/string-base-replace": "^0.2.1",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
     "@stdlib/utils-define-read-only-property": "^0.2.1",

@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-13)
+## Unreleased (2024-07-14)
 
 <section class="features">
 
 ### Features
 
+-   [`d06165b`](https://github.com/stdlib-js/stdlib/commit/d06165bd6c491b4ad19bc2577be76cff083eda98) - add support for extending data type kind subsets with a \"generic\" data type
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550)
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`d06165b`](https://github.com/stdlib-js/stdlib/commit/d06165bd6c491b4ad19bc2577be76cff083eda98) - **feat:** add support for extending data type kind subsets with a \"generic\" data type _(by Athan Reines)_
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - **feat:** add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550) _(by Jaysukh Makvana, Athan Reines)_
 
 </details>
