@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@v0.3.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { enum } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
+import { enum } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@v0.3.0-deno/mod.js';
 ```
 
 #### dtypes( \[kind] )
@@ -137,7 +137,7 @@ var out = dtypes( 'floating_point_and_generic' );
 
 ```javascript
 var contains = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains' ).factory;
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@v0.3.0-deno/mod.js';
 
 var isdtype = contains( dtypes() );
 
