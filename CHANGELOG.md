@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-07-14)
+## 0.3.0 (2024-07-28)
 
 <section class="features">
 
@@ -53,12 +53,68 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ## 0.2.1 (2024-02-24)
 
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-14)
+
 <section class="features">
 
 ### Features
 
 -   [`6b9e18f`](https://github.com/stdlib-js/stdlib/commit/6b9e18f625337d030eb3cd2001934696ef05bfc2) - add support for 'typed' data type kind
 -   [`e90a075`](https://github.com/stdlib-js/stdlib/commit/e90a075eea2dbfe41a5b19209226316544f95f4d) - improve type specificity of return type and update examples
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`6b9e18f`](https://github.com/stdlib-js/stdlib/commit/6b9e18f625337d030eb3cd2001934696ef05bfc2) - **feat:** add support for 'typed' data type kind _(by Athan Reines)_
+-   [`e90a075`](https://github.com/stdlib-js/stdlib/commit/e90a075eea2dbfe41a5b19209226316544f95f4d) - **feat:** improve type specificity of return type and update examples _(by Athan Reines)_
+-   [`453dd85`](https://github.com/stdlib-js/stdlib/commit/453dd85b5dd186d2b4d458256fe84906e1503fe2) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2023-09-23)
+
+<section class="features">
+
+### Features
+
 -   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 -   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
 -   [`03effb2`](https://github.com/stdlib-js/stdlib/commit/03effb27ed971c369883a650dd3f8d079a2acab1) - add `real` data type kind
@@ -94,9 +150,6 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`6b9e18f`](https://github.com/stdlib-js/stdlib/commit/6b9e18f625337d030eb3cd2001934696ef05bfc2) - **feat:** add support for 'typed' data type kind _(by Athan Reines)_
--   [`e90a075`](https://github.com/stdlib-js/stdlib/commit/e90a075eea2dbfe41a5b19209226316544f95f4d) - **feat:** improve type specificity of return type and update examples _(by Athan Reines)_
--   [`453dd85`](https://github.com/stdlib-js/stdlib/commit/453dd85b5dd186d2b4d458256fe84906e1503fe2) - **build:** remove tslint directives _(by Philipp Burckhardt)_
 -   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - **feat:** update minimum TypeScript version _(by Philipp Burckhardt)_
 -   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - **feat:** rename `integral` to `integer` _(by Athan Reines)_
 -   [`03effb2`](https://github.com/stdlib-js/stdlib/commit/03effb27ed971c369883a650dd3f8d079a2acab1) - **feat:** add `real` data type kind _(by Athan Reines)_
@@ -120,6 +173,96 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.9">
+
+## 0.0.9 (2022-02-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.8">
+
+## 0.0.8 (2021-08-22)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.7">
+
+## 0.0.7 (2021-07-09)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.6">
+
+## 0.0.6 (2021-07-06)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.5">
+
+## 0.0.5 (2021-06-27)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.4">
+
+## 0.0.4 (2021-06-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.3">
+
+## 0.0.3 (2021-06-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.2">
+
+## 0.0.2 (2021-06-14)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.1">
+
+## 0.0.1 (2021-06-14)
+
+No changes reported for this release.
 
 </section>
 
