@@ -46,7 +46,7 @@
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-assert-contains": "^0.2.1",
+    "@stdlib/array-base-assert-contains": "^0.2.2",
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
     "@stdlib/assert-is-string-array": "^0.2.2",
