@@ -128,17 +128,15 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ### BREAKING CHANGES
 
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
 -   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
 
     -   To migrate, users should update their code to use `integer` rather
-    than `integral` to refer to the policy/kind which includes both
-    signed and unsigned integer dtypes.
+        than `integral` to refer to the policy/kind which includes both
+        signed and unsigned integer dtypes.
 
 </section>
 
