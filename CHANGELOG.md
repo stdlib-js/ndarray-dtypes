@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-06-28)
 
 <section class="features">
 
 ### Features
 
+-   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - add 16-bit data types
 -   [`a76c12c`](https://github.com/stdlib-js/stdlib/commit/a76c12c36a3ec2c34ca6d9798f7e72e42f6d0597) - add `indexing` data type kind
 
 </section>
@@ -22,6 +23,8 @@
 
 <details>
 
+-   [`3045045`](https://github.com/stdlib-js/stdlib/commit/30450455fd87ca90d4c020faadfdb42234ff5eec) - **docs:** update dtype list _(by Athan Reines)_
+-   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - **feat:** add 16-bit data types _(by Athan Reines)_
 -   [`2b5e9f1`](https://github.com/stdlib-js/stdlib/commit/2b5e9f129eb801afffded4df13b73dc4a5ae4963) - **refactor:** rename `indexing` to `index` and add specialized index data type kinds _(by Athan Reines)_
 -   [`a76c12c`](https://github.com/stdlib-js/stdlib/commit/a76c12c36a3ec2c34ca6d9798f7e72e42f6d0597) - **feat:** add `indexing` data type kind _(by Athan Reines)_
 
