@@ -1,10 +1,8 @@
-"use strict";var o=function(n,t){return function(){return t||n((t={exports:{}}).exports,t),t.exports}};var a=o(function(O,v){v.exports={all:["binary","bool","complex32","complex64","complex128","float16","float32","float64","generic","int16","int32","int8","uint16","uint32","uint8","uint8c"],typed:["binary","bool","complex32","complex64","complex128","float16","float32","float64","int16","int32","int8","uint16","uint32","uint8","uint8c"],floating_point:["complex32","complex64","complex128","float16","float32","float64"],real_floating_point:["float16","float32","float64"],complex_floating_point:["complex32","complex64","complex128"],boolean:["bool"],integer:["int16","int32","int8","uint16","uint32","uint8","uint8c"],signed_integer:["int16","int32","int8"],unsigned_integer:["uint16","uint32","uint8","uint8c"],real:["float16","float32","float64","int16","int32","int8","uint16","uint32","uint8","uint8c"],numeric:["complex32","complex64","complex128","float16","float32","float64","int16","int32","int8","uint16","uint32","uint8","uint8c"],index:["int32","uint8","bool","generic"],integer_index:["int32"],boolean_index:["bool"],mask_index:["uint8"],typed_index:["int32","uint8","bool"]}});var p=o(function(S,f){
-var _=require('@stdlib/string-base-replace/dist'),u=a(),c=/_and_generic$/;function b(){var n,t,i;return arguments.length===0?u.all.slice():(i=!1,n=arguments[0],c.test(n)&&(n=_(n,c,""),n!=="all"&&n!=="index"&&(i=!0)),t=u[n],t=t?t.slice():[],i&&t.length>0&&t.push("generic"),t)}f.exports=b
-});var x=o(function(j,s){
-function y(){return{bool:0,int8:1,uint8:2,uint8c:3,int16:4,uint16:5,int32:6,uint32:7,int64:8,uint64:9,float16:10,float32:11,float64:12,complex32:13,complex64:14,complex128:15,binary:16,generic:17,notype:18,userdefined_type:256}}s.exports=y
-});var g=o(function(D,m){
-var q=require('@stdlib/utils-define-read-only-property/dist'),h=require('@stdlib/utils-keys/dist');function k(n,t){var i,l,e;for(i=h(t),e=0;e<i.length;e++)l=i[e],q(n,l,t[l]);return n}m.exports=k
-});var F=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),r=p(),d=x(),R=g();F(r,"enum",d);R(r,d());module.exports=r;
+"use strict";var n=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var v=n(function(x,a){
+var u=require('@stdlib/ndarray-base-dtype-strings/dist');function p(){return arguments.length?u(arguments[0]):u()}a.exports=p
+});var g=n(function(b,c){
+var q=require('@stdlib/utils-define-read-only-property/dist'),y=require('@stdlib/utils-keys/dist');function d(e,r){var s,i,t;for(s=y(r),t=0;t<s.length;t++)i=s[t],q(e,i,r[i]);return e}c.exports=d
+});var f=require('@stdlib/ndarray-base-dtype-objects/dist'),o=v(),l=g();l(o,f());module.exports=o;
 /** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
