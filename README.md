@@ -45,50 +45,44 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-dtypes
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dtypes = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dtypes = require( 'path/to/vendor/umd/ndarray-dtypes/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dtypes;
-})();
-</script>
+var dtypes = require( '@stdlib/ndarray-dtypes' );
 ```
 
 #### dtypes( \[kind] )
 
-Returns a list of ndarray data types.
+Returns a list of ndarray data type strings.
 
 ```javascript
 var out = dtypes();
 // e.g., returns [ 'binary', 'complex32', 'complex64', 'complex128', ... ]
 ```
 
-When not provided a data type "kind", the function returns an array containing the following data types:
+When not provided a data type "kind", the function returns an array containing the following data type strings:
 
 -   `binary`: binary.
 -   `bool`: boolean values.
@@ -99,15 +93,15 @@ When not provided a data type "kind", the function returns an array containing t
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `generic`: values of any type.
+-   `int8`: signed 8-bit integers.
 -   `int16`: signed 16-bit integers.
 -   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
 -   `uint8`: unsigned 8-bit integers.
 -   `uint8c`: unsigned clamped 8-bit integers.
+-   `uint16`: unsigned 16-bit integers.
+-   `uint32`: unsigned 32-bit integers.
 
-To return the subset of data types belonging to a specified data type kind, provide a `kind` argument.
+To return the subset of data type strings belonging to a specified data type kind, provide a `kind` argument.
 
 ```javascript
 var out = dtypes( 'floating_point' );
@@ -140,6 +134,152 @@ var out = dtypes( 'floating_point_and_generic' );
 // returns [...]
 ```
 
+<!-- NOTE: keep the following in alphabetical order -->
+
+#### dtypes.binary
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a binary data type.
+
+```javascript
+var dt = dtypes.binary;
+// returns <DataType>
+```
+
+#### dtypes.bool
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a boolean data type.
+
+```javascript
+var dt = dtypes.bool;
+// returns <DataType>
+```
+
+#### dtypes.complex32
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a half-precision complex floating-point number data type.
+
+```javascript
+var dt = dtypes.complex32;
+// returns <DataType>
+```
+
+#### dtypes.complex64
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a single-precision complex floating-point number data type.
+
+```javascript
+var dt = dtypes.complex64;
+// returns <DataType>
+```
+
+#### dtypes.complex128
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a double-precision complex floating-point number data type.
+
+```javascript
+var dt = dtypes.complex128;
+// returns <DataType>
+```
+
+#### dtypes.float16
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a half-precision real-valued floating-point number data type.
+
+```javascript
+var dt = dtypes.float16;
+// returns <DataType>
+```
+
+#### dtypes.float32
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a single-precision real-valued floating-point number data type.
+
+```javascript
+var dt = dtypes.float32;
+// returns <DataType>
+```
+
+#### dtypes.float64
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a double-precision real-valued floating-point number data type.
+
+```javascript
+var dt = dtypes.float64;
+// returns <DataType>
+```
+
+#### dtypes.generic
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a "generic" data type.
+
+```javascript
+var dt = dtypes.generic;
+// returns <DataType>
+```
+
+#### dtypes.int8
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a signed 8-bit integer data type.
+
+```javascript
+var dt = dtypes.int8;
+// returns <DataType>
+```
+
+#### dtypes.int16
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a signed 16-bit integer data type.
+
+```javascript
+var dt = dtypes.int16;
+// returns <DataType>
+```
+
+#### dtypes.int32
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing a signed 32-bit integer data type.
+
+```javascript
+var dt = dtypes.int32;
+// returns <DataType>
+```
+
+#### dtypes.uint8
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing an unsigned 8-bit integer data type.
+
+```javascript
+var dt = dtypes.uint8;
+// returns <DataType>
+```
+
+#### dtypes.uint8c
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing an unsigned clamped 8-bit integer data type.
+
+```javascript
+var dt = dtypes.uint8c;
+// returns <DataType>
+```
+
+#### dtypes.uint16
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing an unsigned 16-bit integer data type.
+
+```javascript
+var dt = dtypes.uint16;
+// returns <DataType>
+```
+
+#### dtypes.uint32
+
+**Read-only** property returning a [data type][@stdlib/ndarray/dtype-ctor] instance representing an unsigned 32-bit integer data type.
+
+```javascript
+var dt = dtypes.uint32;
+// returns <DataType>
+```
+
 </section>
 
 <!-- /.usage -->
@@ -160,13 +300,8 @@ var out = dtypes( 'floating_point_and_generic' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var contains = require( '@stdlib/array-base-assert-contains' ).factory;
 var dtypes = require( '@stdlib/ndarray-dtypes' );
 
 var isdtype = contains( dtypes() );
@@ -182,11 +317,6 @@ bool = isdtype( 'uint8' );
 
 bool = isdtype( 'beep' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -290,15 +420,17 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-dtypes/main/LICENSE
 
+[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray-dtype-ctor
+
 <!-- <related-links> -->
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/umd
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes/tree/umd
+[@stdlib/array/typed-dtypes]: https://github.com/stdlib-js/array-typed-dtypes
 
 <!-- </related-links> -->
 
