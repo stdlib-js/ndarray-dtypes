@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2025-11-11)
 
 <section class="features">
 
@@ -23,6 +23,7 @@
 
 <details>
 
+-   [`12eb3ae`](https://github.com/stdlib-js/stdlib/commit/12eb3aee1baf1aa53cea76e8149c59d8c702b0b2) - **test:** add missing parentheses to descriptions _(by Philipp Burckhardt)_
 -   [`3d09030`](https://github.com/stdlib-js/stdlib/commit/3d09030cc4f13ac5fa69ce4a0fe2546464cdbf0c) - **docs:** document exported data type instances _(by Athan Reines)_
 -   [`bd31cd9`](https://github.com/stdlib-js/stdlib/commit/bd31cd9ab358b0f2cecd1c82d42cd394e75bad75) - **refactor:** use internal utility and expose DataType instances, rather than enums _(by Athan Reines)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
