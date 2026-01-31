@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-dtypes",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "List of ndarray data types.",
   "license": "Apache-2.0",
   "author": {
@@ -39,11 +39,11 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-dtype-objects": "github:stdlib-js/ndarray-base-dtype-objects#main",
-    "@stdlib/ndarray-base-dtype-strings": "github:stdlib-js/ndarray-base-dtype-strings#main",
+    "@stdlib/ndarray-base-dtype-strings": "^0.1.0",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-read-only-property": "^0.2.2",
     "@stdlib/utils-keys": "^0.2.2",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-base-assert-contains": "^0.2.2",
@@ -85,7 +85,6 @@
     "utils",
     "util"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
