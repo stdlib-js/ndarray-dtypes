@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@v0.4.1-deno/mod.js';
 ```
 
 #### dtypes( \[kind] )
@@ -284,7 +284,7 @@ var dt = dtypes.uint32;
 
 ```javascript
 var contains = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains' ).factory;
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@v0.4.1-deno/mod.js';
 
 var isdtype = contains( dtypes() );
 
