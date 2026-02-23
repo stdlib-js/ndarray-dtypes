@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,20 +16,19 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var dtypeStrings = require( '@stdlib/ndarray-base-dtype-strings' );
+import { DataTypeString, DataTypeKind } from '@stdlib/types/ndarray';
 
-
-// MAIN //
+// TODO: document `DataType` instances once we've added a `DataType` type definition to `@stdlib/types`
 
 /**
-* Returns a list of ndarray data types.
+* Returns a list of ndarray data type strings.
 *
-* @param {string} [kind] - data type kind
-* @returns {Array<string>} list of ndarray data types
+* @param kind - data type kind
+* @returns list of ndarray data type strings
 *
 * @example
 * var list = dtypes();
@@ -39,14 +38,9 @@ var dtypeStrings = require( '@stdlib/ndarray-base-dtype-strings' );
 * var list = dtypes( 'floating_point' );
 * // returns [...]
 */
-function dtypes() {
-	if ( arguments.length ) {
-		return dtypeStrings( arguments[ 0 ] );
-	}
-	return dtypeStrings();
-}
+declare function dtypes( kind?: DataTypeKind ): Array<DataTypeString>;
 
 
 // EXPORTS //
 
-module.exports = dtypes;
+export = dtypes;
